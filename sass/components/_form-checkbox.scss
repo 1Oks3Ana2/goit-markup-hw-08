@@ -1,0 +1,56 @@
+.checkbox {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.checkbox__field {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox__icon {
+  display: inline-block;
+  margin-right: 8.38px;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/not-checked.svg);
+  background-size: contain;
+
+  cursor: pointer;
+
+  @include transitioned($property: background-image);
+
+  .checkbox__input:checked + & {
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+  }
+}
+
+.checkbox__text {
+  color: var(--secondary-txt-cl);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+}
+
+.checkbox__link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}

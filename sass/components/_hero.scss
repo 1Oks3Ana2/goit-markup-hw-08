@@ -1,0 +1,115 @@
+.hero {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #c4c4c4;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        var(--gradient-cl),
+        var(--gradient-cl)
+      ),
+      url("../../images/hero-sm@1x.jpg");
+
+    @media screen and (min-device-pixer-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--gradient-cl),
+          var(--gradient-cl)
+        ),
+        url("../../images/hero-sm@2x.jpg");
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        to right,
+        var(--gradient-cl),
+        var(--gradient-cl)
+      ),
+      url("../../images/hero-md@1x.jpg");
+
+    @media screen and (min-device-pixer-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--gradient-cl),
+          var(--gradient-cl)
+        ),
+        url("../../images/hero-md@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(
+        to right,
+        var(--gradient-cl),
+        var(--gradient-cl)
+      ),
+      url("../../images/hero-lg@1x.jpg");
+
+    @media screen and (min-device-pixer-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--gradient-cl),
+          var(--gradient-cl)
+        ),
+        url("../../images/hero-lg@2x.jpg");
+    }
+  }
+}
+
+.hero__title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-white-cl);
+
+  @media screen and (min-width: $mobile) {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 696px;
+
+    font-size: 44px;
+  }
+}
+
+.hero__btn {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 24px;
+}

@@ -1,0 +1,35 @@
+.social-personal {
+  display: flex;
+  justify-content: center;
+}
+
+.social-personal__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-personal__icon-wrap {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  color: var(--inactive-icon-cl);
+
+  transition: color 250ms var(--time-function),
+    background-color 250ms var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--main-white-cl);
+    background-color: var(--accent-color);
+  }
+}
+
+.social-personal__icon {
+  fill: currentColor;
+}

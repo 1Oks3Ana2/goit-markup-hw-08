@@ -1,0 +1,5 @@
+@mixin transitioned($property) {
+  transition: $property 250ms var(--time-function);
+}
+
+// @include transitioned($element: border-color);

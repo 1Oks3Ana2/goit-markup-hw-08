@@ -1,0 +1,38 @@
+.footer__address {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 460px;
+    margin-left: 76px;
+
+    width: 232px;
+
+    text-align: center;
+  }
+}
+
+.address-list__item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.address-list__link {
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+  color: var(--main-footer-txt-cl);
+
+  @extend %transition;
+
+  &--color {
+    color: var(--main-white-cl);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,22 @@
+.mobile-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  color: var(--accent-color);
+
+  cursor: pointer;
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .mobile-button {
+    display: none;
+  }
+}

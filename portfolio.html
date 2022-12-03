@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <!-- logo-header -->
+        <a href="./index.html" class="header__logo logo" lang="en"
+          ><span class="logo-web">Web</span>Studio</a
+        >
+
+        <!-- mobile menu button -->
+        <button type="button" class="mobile-button js-open-menu">
+          <svg
+            class="mobile-button__icon"
+            width="40"
+            height="40"
+            aria-label="Mobile menu switch"
+          >
+            <use
+              class="mobile-button__icon-menu"
+              href="./images/icons.svg#menu-icon"
+            ></use>
+          </svg>
+        </button>
+
+        <!-- Site navigation -->
+        <nav class="nav nav--none">
+          <ul class="nav__main-nav list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contacts -->
+
+        <ul class="main-contact main-contact--none list">
+          <li class="main-contact__item">
+            <a href="mailto:info@devstudio.com" class="main-contact__link"
+              ><svg class="main-contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="main-contact__item">
+            <a href="tel:+380961111111" class="main-contact__link"
+              ><svg class="main-contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile menu container -->
+        <div class="mobile-menu js-menu-container">
+          <!-- Close button -->
+          <button
+            type="button"
+            class="mobile-menu__btn mobile-button js-close-menu"
+          >
+            <svg
+              class="mobile-button__icon"
+              width="40"
+              height="40"
+              aria-label="Mobile menu switch"
+            >
+              <use
+                class="mobile-button__icon-cross"
+                href="./images/icons.svg#cross-icon"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="mobile-nav">
+            <!-- Site navigation -->
+            <nav class="nav">
+              <ul class="nav__main-nav list">
+                <li class="nav__item">
+                  <a href="./index.html" class="nav__link">Студія</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Contacts -->
+
+            <ul class="main-contact list">
+              <li class="main-contact__item">
+                <a href="tel:+380961111111" class="main-contact__link phone">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="main-contact__item">
+                <a href="mailto:info@devstudio.com" class="main-contact__link">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <!-- mobile social links -->
+            <ul class="mobile-social list">
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Portfolio section -->
+
+      <section class="portfolio section">
+        <div class="portfolio__container container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+
+          <!-- Navigation buttons -->
+
+          <ul class="project-nav list">
+            <li class="project-nav__item">
+              <button
+                type="button"
+                class="project-nav__btn project-nav__btn--all btn"
+              >
+                Усі
+              </button>
+            </li>
+            <li class="project-nav__item">
+              <button type="button" class="project-nav__btn btn">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="project-nav__item">
+              <button type="button" class="project-nav__btn btn">
+                Додатки
+              </button>
+            </li>
+            <li class="project-nav__item">
+              <button type="button" class="project-nav__btn btn">Дизайн</button>
+            </li>
+            <li class="project-nav__item">
+              <button type="button" class="project-nav__btn btn">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!-- Portfolio cards -->
+
+          <ul class="project-list list">
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project1-lg@1x.jpg 370w,
+                        ./images/projects/project1-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project1-md@1x.jpg 354w,
+                        ./images/projects/project1-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project1-sm@1x.jpg 450w,
+                        ./images/projects/project1-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project1-sm@1x.jpg"
+                      alt="Сайт відкритий на ноутбуці"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta project-list__meta--tab">
+                  <h2 class="project-list__title">Технокряк</h2>
+                  <p class="project-list__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project2-lg@1x.jpg 370w,
+                        ./images/projects/project2-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project2-md@1x.jpg 354w,
+                        ./images/projects/project2-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project2-sm@1x.jpg 450w,
+                        ./images/projects/project2-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project2-sm@1x.jpg"
+                      alt="Два баскетболісти змагаються за м'яч"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis fuga voluptatibus cum numquam illum ea eum,
+                      tempora aspernatur pariatur impedit.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta">
+                  <h2 class="project-list__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="project-list__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project3-lg@1x.jpg 370w,
+                        ./images/projects/project3-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project3-md@1x.jpg 354w,
+                        ./images/projects/project3-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project3-sm@1x.jpg 450w,
+                        ./images/projects/project3-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project3-sm@1x.jpg"
+                      alt="Логотип рестрану Seafood"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Pariatur dolorem saepe illo fuga laboriosam provident
+                      impedit soluta quasi adipisci quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta">
+                  <h2 class="project-list__title">Ресторан Seafood</h2>
+                  <p class="project-list__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project4-lg@1x.jpg 370w,
+                        ./images/projects/project4-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project4-md@1x.jpg 354w,
+                        ./images/projects/project4-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project4-sm@1x.jpg 450w,
+                        ./images/projects/project4-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project4-sm@1x.jpg"
+                      alt="Чорні навушники"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      In delectus dicta nemo. Necessitatibus nulla eum,
+                      voluptatibus consequuntur dolor aperiam? Laboriosam?
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta">
+                  <h2 class="project-list__title">Проєкт Prime</h2>
+                  <p class="project-list__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project5-lg@1x.jpg 370w,
+                        ./images/projects/project5-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project5-md@1x.jpg 354w,
+                        ./images/projects/project5-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project5-sm@1x.jpg 450w,
+                        ./images/projects/project5-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project5-sm@1x.jpg"
+                      alt="Проєкт Boxes"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quis laborum aliquam possimus esse nostrum cumque ratione
+                      eveniet voluptas sequi iste.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta">
+                  <h2 class="project-list__title">Проєкт Boxes</h2>
+                  <p class="project-list__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project6-lg@1x.jpg 370w,
+                        ./images/projects/project6-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project6-md@1x.jpg 354w,
+                        ./images/projects/project6-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project6-sm@1x.jpg 450w,
+                        ./images/projects/project6-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project6-sm@1x.jpg"
+                      alt="Відображення веб-сайту на комп'ютері"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Corrupti perferendis doloremque quos sed officia possimus
+                      unde aliquid modi vitae dolorem.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta">
+                  <h2 class="project-list__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="project-list__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project7-lg@1x.jpg 370w,
+                        ./images/projects/project7-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project7-md@1x.jpg 354w,
+                        ./images/projects/project7-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project7-sm@1x.jpg 450w,
+                        ./images/projects/project7-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project7-sm@1x.jpg"
+                      alt="Розгорнуті сторінки журналу"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Necessitatibus temporibus enim nobis mollitia deleniti
+                      atque cupiditate minus id. Ad, rem.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta">
+                  <h2 class="project-list__title">Видання Limited Edition</h2>
+                  <p class="project-list__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project8-lg@1x.jpg 370w,
+                        ./images/projects/project8-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project8-md@1x.jpg 354w,
+                        ./images/projects/project8-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project8-sm@1x.jpg 450w,
+                        ./images/projects/project8-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project8-sm@1x.jpg"
+                      alt="Проєкт LAB"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nulla deleniti modi dolorum neque perferendis officiis
+                      nemo. Animi fugit asperiores voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta">
+                  <h2 class="project-list__title">Проєкт LAB</h2>
+                  <p class="project-list__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list__item">
+              <a href="#" class="project-list__link">
+                <div class="project-list__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: $desktop)"
+                      srcset="
+                        ./images/projects/project9-lg@1x.jpg 370w,
+                        ./images/projects/project9-lg@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: $tablet)"
+                      srcset="
+                        ./images/projects/project9-md@1x.jpg 354w,
+                        ./images/projects/project9-md@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: $mobile)"
+                      srcset="
+                        ./images/projects/project9-sm@1x.jpg 450w,
+                        ./images/projects/project9-sm@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      class="team-list__photo"
+                      sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (min-width: $mobile) 450px, 100vw"
+                      src="./images/projects/project9-sm@1x.jpg"
+                      alt="Ноутбук із відкритим додатком Growing Business"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="project-list__overlay">
+                    <p class="project-list__text-overlay">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae fugiat laudantium necessitatibus, commodi saepe
+                      quo similique labore a dolorem maxime!
+                    </p>
+                  </div>
+                </div>
+                <div class="project-list__meta">
+                  <h2 class="project-list__title">Growing Business</h2>
+                  <p class="project-list__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__sub-container">
+          <!-- logo-footer -->
+          <a href="./index.html" class="footer__logo logo" lang="en">
+            <span class="logo-web">Web</span>Studio
+          </a>
+
+          <!-- Address -->
+          <address class="footer__address">
+            <ul class="address-list list">
+              <li class="address-list__item">
+                <a
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  class="address-list__link address-list__link--color"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  м. Київ, пр-т Лесі Украінки, 26
+                </a>
+              </li>
+              <li class="address-list__item">
+                <a href="mailto:info@devstudio.com" class="address-list__link"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="address-list__item">
+                <a href="tel:+380961111111" class="address-list__link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Social icons -->
+
+        <div class="footer__sub-container social-media">
+          <p class="social-media__action action"><b>приєднуйтесь</b></p>
+          <ul class="socials list">
+            <li class="socials__item">
+              <a href="" aria-label="Instagram" class="socials__wrap"
+                ><svg class="socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a href="" aria-label="Twitter" class="socials__wrap"
+                ><svg class="socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use></svg
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a href="" aria-label="Facebook" class="socials__wrap"
+                ><svg class="socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use></svg
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a href="" aria-label="LinkedIn" class="socials__wrap"
+                ><svg class="socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscription form -->
+
+        <div class="footer__sub-container subscribe">
+          <p class="subscribe__action action">
+            <b>Підпишіться на розсилку</b>
+          </p>
+          <form class="subscribe__form-field">
+            <label
+              class="subscribe__form-label"
+              for="mail"
+              aria-label="subscription form"
+            >
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="subscribe__form-input"
+              />
+            </label>
+            <button type="submit" class="subscribe__btn btn">
+              Підписатися
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS script -->
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

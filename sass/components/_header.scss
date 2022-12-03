@@ -1,0 +1,27 @@
+.header {
+  border-bottom: 1px solid var(--header-border-cl);
+
+  &__logo {
+    color: var(--logo-header-cl);
+
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &__container {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.header__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
