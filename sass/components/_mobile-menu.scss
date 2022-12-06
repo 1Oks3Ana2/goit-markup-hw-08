@@ -26,6 +26,10 @@
 }
 
 .mobile-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   padding-top: 48px;
   padding-left: 40px;
   padding-bottom: 48px;
@@ -33,6 +37,8 @@
 
 .mobile-social {
   display: flex;
+
+  flex-wrap: wrap;
 }
 
 .mobile-social__item {

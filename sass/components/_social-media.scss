@@ -1,9 +1,9 @@
 .social-media {
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    position: absolute;
-    top: 65px;
-    right: 89px;
-  }
+  // @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  //   // position: absolute;
+  //   // top: 65px;
+  //   // right: 89px;
+  // }
 
   @media screen and (min-width: $desktop) {
     &:not(:last-child) {

@@ -1,4 +1,9 @@
 .subscribe {
+  @media screen and (min-width: $tablet) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;
@@ -19,6 +24,8 @@
   padding-bottom: 15px;
   padding-left: 16px;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 450px;
 
   color: var(--main-footer-txt-cl);
   font-size: 16px;

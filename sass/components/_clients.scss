@@ -19,7 +19,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: calc((100% - 60px) / 3);
 
     &:nth-child(-n + 3) {
@@ -29,11 +29,11 @@
     &:not(:nth-child(3n)) {
       margin-right: 30px;
     }
+  }
 
-    @media screen and (min-width: $desktop) {
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }

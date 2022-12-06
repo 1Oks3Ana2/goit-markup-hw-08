@@ -3,6 +3,9 @@
   margin-right: auto;
   margin-left: auto;
 
+  max-width: 1600px;
+  height: 400px;
+
   background-color: #c4c4c4;
 
   background-position: center;
@@ -92,7 +95,7 @@
 
   color: var(--main-white-cl);
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $desktop) {
     font-size: 26px;
     line-height: 1.6;
   }
@@ -105,6 +108,7 @@
     width: 696px;
 
     font-size: 44px;
+    line-height: 1.36;
   }
 }
 

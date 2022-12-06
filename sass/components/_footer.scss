@@ -1,12 +1,16 @@
 .footer {
-  position: relative;
-
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-bg-cl);
 }
 
 .footer__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -14,6 +18,13 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
+  }
+}
+
+.sub-container--tablet {
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+    max-width: 323px;
   }
 }
 
