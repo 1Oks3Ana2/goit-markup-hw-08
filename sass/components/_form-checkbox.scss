@@ -37,6 +37,7 @@
   .checkbox__input:checked + & {
     background-image: url(../images/icon-check.svg);
     background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
